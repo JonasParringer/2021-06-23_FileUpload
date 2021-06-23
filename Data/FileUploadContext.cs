@@ -7,7 +7,11 @@ using _2021_06_23_FileUpload.Models;
 
     public class FileUploadContext : DbContext
     {
-        public FileUploadContext (DbContextOptions<FileUploadContext> options)
+    public FileUploadContext()
+    {
+    }
+
+    public FileUploadContext (DbContextOptions<FileUploadContext> options)
             : base(options)
         {
         }
